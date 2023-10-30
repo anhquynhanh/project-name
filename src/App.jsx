@@ -2,12 +2,12 @@ import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-// import './Accordion.css'
+import './Accordion.css'
 import Accordion from './features/Accordion'
 import Footer from './features/footer/Footer'
 import Header from './features/header/Header'
 import Main from './features/main/Main'
-import Carousel from './features/carousel/carousel'
+// import Carousel from './features/carousel/carousel'
 
 const products = [
   {
@@ -124,15 +124,15 @@ function App() {
         referrerPolicy="no-referrer"
       />
       
-      <Carousel items={carousel} />
+      {/* <Carousel items={carousel} /> */}
 
       <Header />
 
       <Accordion />
 
-      {/* <Accordion title="Section 1" content="Content of Section 1" />
+      <Accordion title="Section 1" content="Content of Section 1" />
       <Accordion title="Section 2" content="Content of Section 2" />
-      <Accordion title="Section 3" content="Content of Section 3" /> */}
+      <Accordion title="Section 3" content="Content of Section 3" />
 
       <Main products={products} />
 
